@@ -4,10 +4,10 @@
     </div>
     <ul>
         <li><a routerLink="/">Home</a></li>
-        <li *ngif="isLoggedIn"><a routerLink="/allposts">Tout les img</a></li>
-        <li *ngif="isLoggedIn"><a routerLink="/favorites"> Favorites</a></li>
-        <li *ngif="isLoggedIn"><a routerLink="/myPosts">Mes images</a></li>
-        <li *ngif="isLoggedIn"><a routerLink="/following">Suivis</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="/allposts">Tout les img</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="/favorites"> Favorites</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="/myPosts">Mes images</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="/following">Suivis</a></li>
     </ul>
 
     <ul>
