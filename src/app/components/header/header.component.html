@@ -1,0 +1,17 @@
+<nav>
+    <div>
+        <a href="">SuperInsta</a>
+    </div>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li *ngif="isLoggedIn"><a routerLink="/allposts">Tout les img</a></li>
+        <li *ngif="isLoggedIn"><a routerLink="/favorites"> Favorites</a></li>
+        <li *ngif="isLoggedIn"><a routerLink="/myPosts">Mes images</a></li>
+        <li *ngif="isLoggedIn"><a routerLink="/following">Suivis</a></li>
+    </ul>
+
+    <ul>
+        <li><a routerLink="/login">Connexion</a></li>
+        <li><a routerLink="/signup">S'enregistrer</a></li>
+    </ul>
+</nav>
